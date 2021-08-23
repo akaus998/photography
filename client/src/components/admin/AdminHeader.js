@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Radium, {StyleRoot} from 'radium';
 import logo from '../../images/logo.png';
 import { flash } from 'react-animations';

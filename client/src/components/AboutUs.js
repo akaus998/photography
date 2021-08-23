@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header.js';
 import Footer from './Footer.js';
+import SlideShow from './slideshow.js';
 import { slideInDown,flash,merge,zoomIn} from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 const fadeZoom=merge(slideInDown,zoomIn);
@@ -23,12 +24,11 @@ const AboutUs=()=>{
 		<Header />
 		
 			
-			<StyleRoot><div style={styles.fadeZoom}>
-			<div style={{width:'100%',backgroundColor:'black',height:'600px'}} ></div>
-		<StyleRoot><div style={styles.flash}><div style={{backgroundColor:'orange',height:'230px',position:'absolute',top:'50%'
-		,marginLeft:'30%',width:'400px'}} >hi im sliding</div></div></StyleRoot>
-		</div></StyleRoot>
-			
+		<div style={{backgroundColor:'black',height:'800px',width:'100%',position:'relative'}}>
+    </div>
+			<div style={{position:'absolute',top:'32%',left:'2%',width:'100%'}}>
+        <SlideShow />
+      </div>
 		
 		<Footer />
 		</div>

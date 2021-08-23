@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import homeBg from '../images/home-bg.jpg';
 import logo from '../images/logo.png';
-import portrait from '../images/portrait.jpeg';
 import Modal from './Modal.js';
 import '../styles/styles.css';
 import { flash } from 'react-animations';
@@ -74,11 +73,11 @@ class Home extends React.Component{
 			<nav className="navigation-bar">
 
 			<ul style={{display:'flex'}}>
-			<li className="navigation-button"><a style={{color:'mediumpurple'}} className="navigation-hover">Home</a></li>
-			<li className="navigation-button"><div className="dropdown"><a style={{color:'mediumpurple'}} className="navigation-hover">Galleries</a>
+			<li className="navigation-button"><a href="mailto:dtketharinathan@gmail.com" style={{color:'mediumpurple'}} className="navigation-hover">Home</a></li>
+			<li className="navigation-button"><div className="dropdown"><a href="mailto:dtketharinathan@gmail.com" style={{color:'mediumpurple'}} className="navigation-hover">Galleries</a>
 			<div className="dropdown-content">
 			<a onClick={e=>this.onModalLoad(e)}>Wild Life Photography</a>
-			<a href="">Portrait Photography</a>
+			<a href="mailto:dtketharinathan@gmail.com">Portrait Photography</a>
 			</div>
 			</div>
 			</li>

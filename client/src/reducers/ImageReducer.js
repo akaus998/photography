@@ -1,4 +1,4 @@
-import {fetchImages,postImages} from '../actions';
+
 import _ from 'lodash';
 
 export default(state={},action)=>{

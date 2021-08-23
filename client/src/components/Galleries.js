@@ -1,6 +1,4 @@
 import React from 'react';
-import GoogleAuth from './GoogleAuth.js';
-import landscape from '../images/landscape.jpg';
 import {connect} from 'react-redux';
 import {fetchImages,postImages,postImageReport} from '../actions';
 import ImageViewModal from './ImageViewModal.js';
@@ -12,7 +10,7 @@ import Header from './Header.js';
 import ReportModal from './ReportModal.js';
 
 
-const BASE_URL = 'http://localhost:3001/';
+
 class Galleries extends React.Component{
 	
 	state={ModalLoad:'false',currentImgSrc:null,previewUrl:null,currentImgName:null,selectedFile:null,

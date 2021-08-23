@@ -5,6 +5,7 @@ import Galleries from './Galleries.js';
 import history from '../history.js';
 import AboutUs from './AboutUs.js';
 import AdminPage from './admin/AdminPage.js';
+import SlideShow from './slideshow.js';
 
 const App=()=>{
 
@@ -16,6 +17,7 @@ const App=()=>{
 		<Route path='/Galleries' exact component={Galleries} />
 		<Route path='/AboutUs' exact component={AboutUs} />
 		<Route path='/AdminPage' exact component={AdminPage} />
+		<Route path='/slideshow' exact component={SlideShow} />
 		</div>
 		</Router>
 		</div>

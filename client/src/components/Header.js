@@ -28,14 +28,14 @@ class Header extends React.Component{
 
 				<ul style={{display:'flex',marginLeft:'50%',marginTop:'-4.5%'}}>
 				<li style={{paddingRight: '45px' ,fontWeight: 'bolder',fontSize: '18px',listStyleType: 'none',marginTop: '6%'}}><Link to='/' style={{color:'mediumpurple',textDecorationLine:'none'}} className="navigation-hover">Home</Link></li>
-				<li style={{paddingRight: '45px' ,fontWeight: 'bolder',fontSize: '18px',listStyleType: 'none',marginTop: '6%'}}><div className="dropdown"><a style={{color:'mediumpurple',textDecorationLine:'none'}} className="navigation-hover">Galleries</a>
+				<li style={{paddingRight: '45px' ,fontWeight: 'bolder',fontSize: '18px',listStyleType: 'none',marginTop: '6%'}}><div className="dropdown"><a href="mailto:dtketharinathan@gmail.com" style={{color:'mediumpurple',textDecorationLine:'none'}} className="navigation-hover">Galleries</a>
 				<div className="dropdown-content">
-				<a onClick={e=>this.onModalLoad(e)}>Wild Life Photography</a>
-				<a href="">Portrait Photography</a>
+				<a href="mailto:dtketharinathan@gmail.com" onClick={e=>this.onModalLoad(e)}>Wild Life Photography</a>
+				<a href="mailto:dtketharinathan@gmail.com">Portrait Photography</a>
 				</div>
 				</div>
 				</li>
-				<li style={{paddingRight: '45px' ,fontWeight: 'bolder',fontSize: '18px',listStyleType: 'none',marginTop: '6%'}}><a className="navigation-hover" style={{color:'mediumpurple',textDecorationLine:'none'}}>About us</a></li>
+				<li style={{paddingRight: '45px' ,fontWeight: 'bolder',fontSize: '18px',listStyleType: 'none',marginTop: '6%'}}><a href="mailto:dtketharinathan@gmail.com" className="navigation-hover" style={{color:'mediumpurple',textDecorationLine:'none'}}>About us</a></li>
 				<li style={{paddingRight: '45px' ,fontWeight: 'bolder',fontSize: '18px',listStyleType: 'none',marginTop: '5%'}}><button className="contactus-btn">Contact Us</button></li>
 				<div style={{marginTop:'4.5%'}}><GoogleAuth /></div>
 				</ul>

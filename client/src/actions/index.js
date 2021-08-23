@@ -58,7 +58,6 @@ export const getReportedImages=()=>{
 
 export const invalidReport=(id)=>{
 	return async(dispatch)=>{
-		const response=await images.delete(`/reports/${id}`);
 		dispatch({type:'INVALID_REPORT',payload:id});
 		history.push('/AdminPage');
 	};
@@ -66,7 +65,6 @@ export const invalidReport=(id)=>{
 
 export const validReport=(id)=>{
 	return async(dispatch)=>{
-		const response=await images.delete(`/images/${id}`);
 		dispatch({type:'VALID_REPORT',payload:id});
 		history.push('/AdminPage');
 	};
